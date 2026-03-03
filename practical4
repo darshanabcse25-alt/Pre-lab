@@ -1,0 +1,99 @@
+<title>Practical 4</title>
+
+<body>
+
+<h1>darshana Bhoyar</h1>
+
+<h2>CS25019</h2>
+
+<table border="3">
+
+<tr>
+
+<th>Day/Time</th>
+
+<th>7 to 8</th>
+
+<th>8 to 9</th>
+
+<th>9 to 10</th>
+
+<th>10 to 12:30</th>
+
+</tr>
+
+<tr>
+
+<th>Mon</th>
+
+<td>SMP</td>
+
+<td>Chem</td>
+
+<td rowspan="6">Dinner</td>
+
+<td>Social Media</td>
+
+</tr>
+
+<tr>
+
+<th>Tue</th>
+
+<td>Chem</td>
+
+<td>Maths2</td>
+
+<td>SMP</td>
+
+</tr>
+
+<tr>
+
+<th>Wed</th>
+
+<td>Maths2</td>
+
+<td>EE</td>
+
+<td>SMP</td>
+
+</tr>
+
+<tr>
+
+<th>Thurs</th>
+
+<td>EE</td>
+
+<td>Maths2</td>
+ <td>Social Media</td>
+
+</tr>
+
+<tr>
+
+<th>Fri</th>
+
+<td>Assignment</td>
+
+<td>Maths2</td>
+
+<td>codeantra</td>
+
+</tr>
+
+<tr>
+
+<th>Sat</th>
+
+<td>Brunch</td>
+
+<td>mobile</td>
+
+<td>maths2</td>
+
+</tr>
+
+</body>
+
