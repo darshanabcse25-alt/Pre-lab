@@ -1,0 +1,93 @@
+<html>
+
+<head>
+
+<title>Resume</title>
+
+</head>
+
+<body bgcolor="pink"
+
+<h1 align="center">RESUME</h1>
+
+<p><b>Name:</b> Darshana Bhoyar</p>
+
+<p><b>Email:</b> darshanab669@gmail.com</p>
+
+<img src="C:\Users\ADMIN\Desktop\photo.jpeg" height="120" weight="120" align="right" alt="my photo">
+<hr>
+
+<h2>Education Details</h2>
+
+<table border="1">
+
+<tr>
+
+<th>Exam</th>
+
+<th>Board/University</th>
+
+<th>Year</th>
+
+<th>Percentage</th>
+
+</tr>
+
+<tr>
+
+<td>State Board</td>
+
+<td>10th</td>
+
+<td>2023</td>
+
+<td>84%</td>
+
+</tr>
+
+<tr>
+
+
+<td>State Board</td>
+
+<td>12th</td>
+
+<td>2025</td>
+
+<td>70%</td>
+
+</tr>
+
+<tr>
+
+<td>B.Tech CSE</td>
+
+<td>SB jain institude of technology management and research</td>
+
+<td>2025-2029</td>
+
+<td>Pursuing</td>
+
+</tr>
+
+</table>
+
+<h2>Personal Details</h2>
+
+<ul>
+
+<li>Name: Darshana Bhoyar</li>
+
+<li>Date of Birth: 31-05-2006/11>
+
+<li>Address: Nagpur</li>
+
+</ul>
+
+<br><br>
+
+<p align="right"><b>Signature</b></p>
+
+</body>
+
+</html>
