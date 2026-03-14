@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>PAN Card Application Form</title>
+<p> Darshana Bhoyar </p>
+<p> CS25019 </p>
+</head>
+
+<body bgcolor="pink">
+
+<h2 align="center">PAN Card Application Registration</h2>
+
+<form>
+
+<h3>1. Select PAN Card Type</h3>
+<label>Select PAN Card Type:</label>
+<select>
+<option>New PAN Card</option>
+<option>Reprint PAN Card</option>
+<option>Correction in PAN</option>
+</select>
+
+<br><br>
+
+<h3>2. Select Applicant Category</h3>
+<label>Applicant Category:</label>
+<select>
+<option>Individual</option>
+<option>Company</option>
+<option>Partnership Firm</option>
+<option>Trust</option>
+<option>Government</option>
+</select>
+
+<br><br>
+
+<h3>3. Applicant Information</h3>
+
+<label>Full Name:</label><br>
+<input type="text" name="fullname"><br><br>
+
+<label>Father's Name:</label><br>
+<input type="text" name="fathername"><br><br>
+
+<label>Date of Birth:</label><br>
+<input type="date" name="dob"><br><br>
+
+<label>Gender:</label><br>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+
+<br><br>
+
+<label>Email ID:</label><br>
+<input type="email" name="email"><br><br>
+
+<label>Mobile Number:</label><br>
+<input type="tel" name="mobile"><br><br>
+
+<label>Address:</label><br>
+<textarea rows="4" cols="40"></textarea>
+
+<br><br>
+
+<label>State:</label>
+<select>
+<option>Maharashtra</option>
+<option>Gujarat</option>
+<option>Madhya Pradesh</option>
+<option>Delhi</option>
+<option>Karnataka</option>
+</select>
+
+<br><br>
+
+<label>Upload Photo:</label><br>
+<input type="file"><br><br>
+
+<label>Upload ID Proof:</label><br>
+<input type="file"><br><br>
+
+<input type="submit" value="Submit Application">
+<input type="reset" value="Reset Form">
+
+</form>
+
+</body>
+</html>
