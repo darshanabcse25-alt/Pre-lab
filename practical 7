@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>Tribute to Ramanujan</title>
+    <h1> Darshana Bhoyar </h1>
+    <h2> CS25019 </h2>
+    <style>
+        /* 1. BACKGROUND */
+        body {
+            background-color: white;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 2. NAVIGATION BAR */
+        .nav {
+            background-color:white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        /* 3. LAYOUT & BORDER */
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background: yellow;
+            padding: 20px;
+            border: 5px solid #2c3e50; /* Solid academic border */
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* 4. TEXT STYLING */
+        h1 { color: #2c3e50; }
+       
+        /* 5. IMAGE STYLING */
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 250px; /* Limits size so it stays sharp */
+            border-radius: 5px;
+        }
+
+        ul {
+            text-align: left;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Work</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="container">
+        <h1>Srinivasa Ramanujan</h1>
+        <p><i>"The Man Who Knew Infinity"</i></p>
+
+        <img src="C:\Users\ADMIN\Downloads\ramanujam.JFIF">
+
+        <p>A self-taught Indian mathematician who changed the world of numbers.</p>
+
+        <h3>Major Feats:</h3>
+        <ul>
+            <li>Infinite Series</li>
+            <li>Number Theory</li>
+            <li>The number 1729</li>
+        </ul>
+    </div>
+
+</body>
+</html>
