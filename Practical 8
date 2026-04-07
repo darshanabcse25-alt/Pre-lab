@@ -1,0 +1,79 @@
+<html>
+
+<head>
+
+<title>garibiii</title>
+
+<style>
+
+body{margin:0;background:linear-gradient(to left,black, white, blue, white))
+
+gallery img:hover{transform:scale(1.1);
+
+filter:brightness(70%);)
+
+</style>
+
+</head>
+
+<body>
+
+<div class="gallery">
+
+<h1> </h1>
+
+<img src="C:\Users\ADMIN\Desktop\download (4).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\images.jfif">
+
+<img src="C:\Users\ADMIN\Desktop\download (6).jfif">
+
+<img src=""C:\Users\ADMIN\Desktop\images (1).jfif"">
+
+<img src="C:\Users\ADMIN\Desktop\images (4).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\download (7).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\download (1).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\download (7).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\download (2).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\download (9).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\download (10).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\download (4).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\download (3).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\images (12).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\images (14).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\images (7).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\images (8).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\download (11).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\images (10).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\download (12).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\images (10).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\images (13).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\download (10).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\download (4).jfif">
+
+<img src="C:\Users\ADMIN\Desktop\images (4).jfif">
+
+</div>
+
+</body>
+
+</html>
