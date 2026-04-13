@@ -1,0 +1,44 @@
+<html>
+<head>   
+ <title>Brew & Bean Café</title>
+</head>
+
+<body bgcolor="browm">   
+ <h1>Brew & Bean Café </h1> 
+ 
+  <form>        
+<h3>Select Your Coffee</h3> 
+   
+    <input type="radio" name="coffee" value="espresso">   
+   
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG" width="80">  
+      Espresso (Rs30)<br><br>
+
+<input type="radio" name="coffee" value="latte"> 
+      
+ <img src="https://www.seriouseats.com/thmb/mhyOZEerd4xc6CwJVoRJ-rgg44o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__drinks.seriouseats.com__images__2013__11__20131107-latte-tulip-464c68d355e34ac1870c1230dd93e7ee.jpg" width="80">
+   
+Latte (Rs40)<br><br>  
+  <input type="radio" name="coffee" value="cappuccino">        
+
+<img src="https://cdn.uengage.io/uploads/18085/image-993178-1717589323.jpeg" width="80">
+Cappuccino (Rs50)<br><br> 
+       
+<h3>Add-ons</h3>
+
+<input type="checkbox" value="milk"> Milk (+Rs100)<br>        
+<input type="checkbox" value="caramel"> Caramel (+Rs150)<br>   
+     <input type="checkbox" value="cream"> Whipped Cream (+Rs200)<br>  
+  
+<h3>Quantity</h3>      
+  <input type="number" name="quantity" min="1" value="1">
+      
+<h3>Your Details</h3>    
+    Name: <input type="text" name="name"><br><br>   
+     Phone: <input type="text" name="phone"><br><br>    
+     <br>    
+    <input type="submit" value="Place Order">
+    
+</form>
+</body>
+</html>
