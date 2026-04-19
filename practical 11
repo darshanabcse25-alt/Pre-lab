@@ -1,0 +1,213 @@
+<html>
+<head>
+<title>Ultimate HTML5 APIs Demo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  background: radial-gradient(circle at top,#0f2027,#203a43,#2c5364);
+  color:#fff;
+  overflow-x:hidden;
+}
+
+h1{
+  text-align:center;
+  margin:20px;
+  font-size:3rem;
+  background:linear-gradient(45deg,#ff9a9e,#fad0c4);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:30px;
+  padding:30px;
+}
+
+.card{
+  position:relative;
+  padding:25px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(20px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.5);
+  transition:0.4s;
+  overflow:hidden;
+}
+
+.card:hover{
+  transform:translateY(-15px) scale(1.03);
+}
+
+.card::after{
+  content:"";
+  position:absolute;
+  width:100%;height:100%;
+  background:linear-gradient(120deg,transparent,rgba(255,255,255,0.2),transparent);
+  top:-100%;left:0;
+  transition:0.6s;
+}
+.card:hover::after{top:100%}
+
+button{
+  padding:10px 20px;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(45deg,#43e97b,#38f9d7);
+  color:#000;
+  font-weight:bold;
+  cursor:pointer;
+  margin:8px;
+  transition:0.3s;
+}
+button:hover{transform:scale(1.1)}
+
+input{
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  margin-top:10px;
+}
+
+
+#drag{
+  width:120px;
+  padding:12px;
+  background:#f7971e;
+  border-radius:12px;
+  cursor:grab;
+  margin:auto;
+}
+
+#drop{
+  margin-top:20px;
+  padding:60px;
+  border:2px dashed #fff;
+  border-radius:15px;
+}
+
+.score{
+  font-size:1.2rem;
+  margin-top:10px;
+}
+
+.toggle{
+  position:fixed;
+  top:20px;right:20px;
+}
+
+.bubble{
+  position:fixed;
+  bottom:-100px;
+  width:40px;height:40px;
+  background:rgba(255,255,255,0.1);
+  border-radius:50%;
+  animation:rise 10s infinite ease-in;
+}
+@keyframes rise{
+  0%{transform:translateY(0)}
+  100%{transform:translateY(-120vh)}
+}
+
+</style>
+</head>
+<body>
+
+<h1> Ultimate HTML5 API Experience </h1>
+
+<div class="toggle">
+  <button onclick="toggleMode()"> Toggle Mode</button>
+</div>
+
+<div class="container">
+
+<div class="card">
+  <h2>Drag & Drop Game</h2>
+  <div id="drag" draggable="true">Drag Me</div>
+  <div id="drop">Drop Target</div>
+  <div img src="C:\Users\ADMIN\Desktop\download (1).jfif"></div>
+</div>
+
+<div class="card">
+  <h2>Live Location</h2>
+  <button onclick="getLocation()">Get Location</button>
+  <p id="location"></p>
+</div>
+
+<div class="card">
+  <h2>User Storage</h2>
+  <input id="name" placeholder="Enter name">
+  <br>
+  <button onclick="saveData()">Save</button>
+  <button onclick="loadData()">Load</button>
+  <button onclick="clearData()">Clear</button>
+  <p id="result"></p>
+</div>
+
+</div>
+
+<script>
+
+let score=0;
+const drag=document.getElementById('drag');
+const drop=document.getElementById('drop');
+
+drag.addEventListener('dragstart',(e)=>{
+  e.dataTransfer.setData('text','drag');
+});
+
+drop.addEventListener('dragover',(e)=>e.preventDefault());
+
+drop.addEventListener('drop',(e)=>{
+  e.preventDefault();
+  score++;
+  document.getElementById('score').innerText=score;
+  drop.innerHTML=" Nice! Keep going";
+});
+
+function getLocation(){
+  const out=document.getElementById('location');
+  if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(pos=>{
+      out.innerHTML=`Lat: ${pos.coords.latitude}<br>Lon: ${pos.coords.longitude}`;
+    });
+  }
+}
+
+function saveData(){
+  const name=document.getElementById('name').value;
+  localStorage.setItem('user',name);
+  document.getElementById('result').innerText="Saved ✔";
+}
+
+function loadData(){
+  const name=localStorage.getItem('user');
+  document.getElementById('result').innerText="Hello "+name;
+}
+
+function clearData(){
+  localStorage.clear();
+  document.getElementById('result').innerText="Cleared";
+}
+
+function toggleMode(){
+  document.body.style.background = document.body.style.background.includes('0f2027')
+    }
+
+for(let i=0;i<10;i++){
+  let b=document.createElement('div');
+  b.classList.add('bubble');
+  b.style.left=Math.random()*100+'%';
+  b.style.animationDuration=(5+Math.random()*5)+'s';
+  document.body.appendChild(b);
+}
+
+</script>
+
+</body>
+</html>
